@@ -3,7 +3,7 @@ import "./Investment.css";
 const InvestmentCard = ({ investCard }) => {
   const { photo, name, driscription } = investCard;
   return (
-    <div className="col-lg-3 col-md-4 col-sm-6">
+    <div className="col-lg-3 col-md-4 col-7 mx-auto">
       <div className="card border-0 investment-card shadow rounded-3 p-3 mb-5 bg-body rounded">
         <img
           src={photo}
