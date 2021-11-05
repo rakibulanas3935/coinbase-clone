@@ -6,7 +6,7 @@ const Footer = () => {
       <div class="container">
         <div class="row">
           <div class="footer-col">
-            <h4>coinbase</h4>
+            <h4 className="text-primary">coinbase</h4>
             <br />
             <br />
             <h6>© 2021 Coinbase</h6>

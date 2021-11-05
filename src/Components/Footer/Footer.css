@@ -26,7 +26,10 @@ ul {
   font-weight: 500;
   position: relative;
 }
-
+.footer-col h6 {
+  color: #bbbbbb;
+  font-size: 16px;
+}
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
