@@ -4,8 +4,15 @@
 }
 .investment-card {
   transition: 0.2s;
+  box-shadow: 0px 0px 17px 3px rgba(105, 105, 105, 0.07);
 }
 .investment-card:hover {
   transform: scale(1.01);
   cursor: pointer;
+}
+.investment {
+  font-size: 28px;
+  line-height: 36px;
+  color: #0a0b0d;
+  font-weight: 500;
 }

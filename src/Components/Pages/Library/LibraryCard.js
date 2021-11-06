@@ -15,9 +15,12 @@ const LibraryCard = ({ libraryCard }) => {
           <h4 className="card-title text-start mb-3 mt-3 library-title">
             {name}
           </h4>
-          <p className="card-text text-start mb-3">{driscription}</p>
-          <h6 className="card-text text-start mb-3 text-primary">
-            Learn more <i class="fas fa-chevron-right"></i>
+          <p className="card-text text-start library-driscription mb-3">
+            {driscription}
+          </p>
+          <h6 className="card-text text-start mb-3  text-primary">
+            <span className=" me-2  text-primary">Learn more</span>
+            <i class="fas fa-chevron-right"></i>
           </h6>
         </div>
       </div>

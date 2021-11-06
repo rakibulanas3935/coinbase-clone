@@ -7,11 +7,18 @@ const Header = () => {
       <div className="row g-4 align-items-center">
         <div className="col-md-1"></div>
         <div className="col-md-5 col-sm-12">
-          <h1 className="text-start mb-5 title">
-            Empowering The Open Financial System
+          <h1 className="text-start text-dark  mb-2 title">
+            Empowering The
+            <br />
+            Open Financial
+            <br />
+            System
           </h1>
-          <h3 className="text-start  mb-5">
-            Coinbase Ventures invests in companies building the open financial
+          <h3 className="text-start details">
+            Coinbase Ventures invests in
+            <br />
+            companies building the open financial
+            <br />
             system.
           </h3>
         </div>

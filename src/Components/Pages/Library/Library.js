@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LibraryCard from "./LibraryCard";
-
+import "./Library.css";
 const Library = () => {
   const [librarys, setLibrarry] = useState([]);
 
@@ -13,7 +13,7 @@ const Library = () => {
   return (
     <div className="container mt-3 mb-3">
       <div className="row gx-5 gy-2">
-        <h2 className="text-start fw-ligh mb-5">Library</h2>
+        <h2 className="text-start library mb-5">Library</h2>
         {librarys.map((library) => (
           <LibraryCard libraryCard={library} key={library.id}></LibraryCard>
         ))}

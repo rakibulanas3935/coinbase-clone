@@ -1,7 +1,17 @@
 .header {
-  margin-top: 20rem;
+  margin-top: 120px !important;
 }
 .title {
-  font-size: 48px;
-  font-weight: 500;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #0a0b0d;
+  font-family: "Oxygen", sans-serif;
+}
+.details {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #0a0b0d;
+  font-family: "Oxygen", sans-serif;
 }

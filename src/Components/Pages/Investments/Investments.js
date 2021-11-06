@@ -14,7 +14,7 @@ const Investments = () => {
   return (
     <div className="container mt-3 mb-3">
       <div className="row">
-        <h2 className="text-start fw-ligh mb-4">Our Investments</h2>
+        <h2 className="text-start investment mb-4">Our Investments</h2>
         {invest.map((invests) => (
           <InvestmentCard
             investCard={invests}
