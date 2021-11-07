@@ -2,8 +2,8 @@ import React from "react";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <footer class="footer">
-      <div class="container">
+    <footer class="footer mt-5">
+      <div class="container mt-5">
         <div class="row">
           <div class="footer-col">
             <h4 className="text-primary">coinbase</h4>

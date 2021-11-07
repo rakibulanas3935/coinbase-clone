@@ -63,19 +63,10 @@
   background-color: #777777;
 }
 
-.navbar-brand {
-  color: #0052ff !important;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-.navbar-background {
-  background-color: #ffffff !important;
-}
-
 .nav-hover .item .nav-link {
   text-decoration: none;
-  color: #233143;
-  padding: 19px 15px;
+  color: #050f19;
+  padding: 19px 12px;
   font-size: 14px;
   display: block;
   font-weight: 500;
@@ -84,6 +75,99 @@
 }
 .nav-hover .item .nav-link:hover {
   border-bottom: 4px solid #0052ff;
+}
+.navbar-background {
+  background-color: white;
+  box-shadow: 0px 1px 0px 1px rgba(148, 148, 148, 0.101);
+}
+.megamenushadow {
+  box-shadow: 1px 2px 5px 4px rgba(146, 146, 146, 0.103);
+  border: none;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #050f19;
+  font-size: 16px;
+  display: block;
+  font-weight: 500;
+  border-bottom: 4px solid transparent;
+  margin-bottom: 10px;
+}
+.icon-link1 {
+  text-decoration: none;
+  color: #050f19;
+  font-size: 16px;
+  display: block;
+  font-weight: 500;
+  border-bottom: 4px solid transparent;
+}
+.icon-link:hover {
+  color: rgba(22, 82, 240, 0.8);
+}
+.icon-link1:hover {
+  color: rgba(22, 82, 240, 0.8);
+}
+.icon-link i {
+  margin-right: 13px;
+  font-size: 13px;
+}
+.icon-link1 i {
+  margin-right: 11px;
+  font-size: 13px;
+}
+.learn-head {
+  font-size: 16px;
+  line-height: 18px;
+  color: #050f19;
+  font-weight: 500;
+}
+.learn-discription {
+  font-size: 16px;
+  line-height: 24px;
+  color: #050f19;
+  font-weight: 400;
+}
+.i-discription {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(17, 51, 83, 0.6);
+  font-weight: 400;
+}
+.i-discription:hover {
+  cursor: pointer;
+  color: #050f19;
+}
+.i-head {
+  font-size: 16px;
+  line-height: 18px;
+  color: #050f19;
+  font-weight: 500;
+}
+.i-head:hover {
+  cursor: pointer;
+  color: rgba(22, 82, 240, 0.8);
+}
+.all-link {
+  text-decoration: none;
+  color: rgba(22, 82, 240, 0.8);
+  font-size: 16px;
+  display: block;
+  font-weight: 500;
+}
+/* className="all-link" */
+.imground {
+  background-color: rgb(146, 69, 69);
+  border-radius: 50px;
+}
+.sing-in {
+  text-decoration: none;
+  color: #050f19;
+  font-size: 14px;
+  display: block;
+  font-weight: 500;
+  border-bottom: 4px solid transparent;
+  transition: 0.3s;
 }
 .navbar .megamenu {
   padding: 1rem;
@@ -114,5 +198,8 @@
 }
 
 .dropdwon-img {
-  width: 8%;
+  width: 40px;
+  height: 40px;
+  box-shadow: -6px 5px 15px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
 }

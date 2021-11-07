@@ -3,25 +3,25 @@
     "id": 1,
     "photo": "https://ventures.coinbase.com/static/images/compound.png",
     "name": "Compound",
-    "driscription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    "driscription": "The protocol for Ethereum money markets."
   },
   {
     "id": 2,
-    "photo": "https://ventures.coinbase.com/static/images/compound.png",
-    "name": "Compound",
-    "driscription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    "photo": "https://images.ctfassets.net/c5bd0wqjc7v0/6usTdvJmkfdh5kaVJTB0Sk/51ed6138e833b73233b6ac7696c9f3a2/blockfi.png?fm=webp&q=100&w=1180",
+    "name": "BlockFi",
+    "driscription": "Crypto asset, investment & wealth management."
   },
   {
     "id": 3,
-    "photo": "https://ventures.coinbase.com/static/images/compound.png",
-    "name": "Compound",
-    "driscription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    "photo": "https://images.ctfassets.net/c5bd0wqjc7v0/5s8jAxNIRER6JGlDAWIRSp/b3d9bba32a44ea97d659cc816aef483c/dharma.png?fm=webp&q=100&w=1180",
+    "name": "Dharma",
+    "driscription": "Earn interest from anywhere in the world."
   },
   {
-    "id": 3,
-    "photo": "https://ventures.coinbase.com/static/images/compound.png",
-    "name": "Compound",
-    "driscription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    "id": 4,
+    "photo": "https://images.ctfassets.net/c5bd0wqjc7v0/2AELGjdoAJTezhisyhPAqj/3bf37daa7f58c523ad7a7b2a2e407dda/etherscan.png?fm=webp&q=100&w=1180",
+    "name": "Etherscan",
+    "driscription": "Ethereum block explorer."
   },
   {
     "id": 3,

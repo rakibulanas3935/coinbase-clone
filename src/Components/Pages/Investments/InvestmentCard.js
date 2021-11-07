@@ -3,11 +3,11 @@ import "./Investment.css";
 const InvestmentCard = ({ investCard }) => {
   const { photo, name, driscription } = investCard;
   return (
-    <div className="col-lg-3 col-md-4 col-7 mx-auto">
-      <div className="card border-0 investment-card  rounded-3 p-3 mb-5 bg-body rounded">
+    <div className="col-lg-3 col-md-4 col-7  mx-auto">
+      <div className="card border-0 investment-card  rounded-3 mt-4  p-3 mb-5 bg-body rounded">
         <img
           src={photo}
-          className="card-img-top img-fluid img-investment "
+          className="card-img-top img-fluid ms-3 mt-4 img-investment "
           width="50px"
           alt="..."
         />

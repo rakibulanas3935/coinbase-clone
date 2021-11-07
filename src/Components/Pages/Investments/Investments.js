@@ -12,16 +12,19 @@ const Investments = () => {
   }, []);
 
   return (
-    <div className="container mt-3 mb-3">
-      <div className="row">
-        <h2 className="text-start investment mb-4">Our Investments</h2>
-        {invest.map((invests) => (
-          <InvestmentCard
-            investCard={invests}
-            key={invests.id}
-          ></InvestmentCard>
-        ))}
+    <div className="container-fluid mt-5 mb-5">
+      <div className="container mt-5 mb-5">
+        <div className="row g-2 align-items-center">
+          <h2 className="text-start investment mb-4">Our Investments</h2>
+          {invest.map((invests) => (
+            <InvestmentCard
+              investCard={invests}
+              key={invests.id}
+            ></InvestmentCard>
+          ))}
+        </div>
       </div>
+      <hr />
     </div>
   );
 };
