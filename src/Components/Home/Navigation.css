@@ -102,9 +102,7 @@
   font-weight: 500;
   border-bottom: 4px solid transparent;
 }
-.icon-link:hover {
-  color: rgba(22, 82, 240, 0.8);
-}
+
 .icon-link1:hover {
   color: rgba(22, 82, 240, 0.8);
 }
@@ -195,6 +193,37 @@
     max-height: 90vh;
     margin-top: 10px;
   }
+  .sing-in {
+    border: 2px solid rgba(22, 82, 240, 0.8);
+    text-align: center;
+    border-radius: 4px;
+    padding: 15px;
+    color: #0052ff;
+    font-size: 16px;
+  }
+  .btn-nav {
+    padding: 15px;
+  }
+
+  .nav-hover .item .nav-link {
+    border: none;
+  }
+  .nav-hover .item .nav-link:hover {
+    border: none;
+  }
+  .megamenushadow {
+    background-color: #f1f3f5;
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+  }
+  .nav-link {
+    position: relative;
+  }
+  .responsive {
+    position: absolute;
+    right: 0%;
+  }
 }
 
 .dropdwon-img {
@@ -203,3 +232,18 @@
   box-shadow: -6px 5px 15px 2px rgba(0, 0, 0, 0.08);
   border-radius: 50%;
 }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+/* ============ desktop view .end// ============ */

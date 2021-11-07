@@ -3,12 +3,12 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer class="footer mt-5">
-      <div class="container mt-5">
+      <div class="container ">
         <div class="row">
           <div class="footer-col">
             <h4 className="text-primary">coinbase</h4>
             <br />
-            <br />
+
             <h6>© 2021 Coinbase</h6>
           </div>
           <div class="footer-col">
