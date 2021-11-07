@@ -3,14 +3,35 @@ import { NavLink } from "react-bootstrap";
 
 import "./Navigation.css";
 const Navigation = () => {
+  // use state for clicking
+
   const [click, setClick] = useState(false);
+  const [click1, setClick1] = useState(false);
+  const [click2, setClick2] = useState(false);
+  const [click3, setClick3] = useState(false);
+  const [click4, setClick4] = useState(false);
 
   const handleClick = () => {
     setClick(!click);
   };
-  const up = "fas fa-angle-up d-lg-none responsive d-inline";
-  const down = "fas fa-angle-down d-lg-none responsive d-inline";
+  const handleClick1 = () => {
+    setClick1(!click1);
+  };
+  const handleClick2 = () => {
+    setClick2(!click2);
+  };
+  const handleClick3 = () => {
+    setClick3(!click3);
+  };
+  const handleClick4 = () => {
+    setClick4(!click4);
+  };
+
+  const down = "fas fa-angle-up d-lg-none responsive d-inline";
+  const up = "fas fa-angle-down d-lg-none responsive d-inline";
+
   return (
+    //navigation start
     <nav className="navbar navbar-expand-lg navbar-background mb-5 p-lg-0 p-2 sticky-top">
       <div className="container">
         <a className="navbar-brand" href="/">
@@ -24,6 +45,7 @@ const Navigation = () => {
         <button class="btn  btn-primary ms-auto me-3 d-lg-none " type="submit">
           Get started
         </button>
+        {/* toggler navigation  */}
         <button
           class="navbar-toggler collapsed"
           type="button"
@@ -46,6 +68,8 @@ const Navigation = () => {
               </a>
             </li>
 
+            {/* learn part start */}
+
             <li class="nav-item item mx-2 dropdown has-megamenu">
               <NavLink
                 class="nav-link dropdown-toggle"
@@ -66,19 +90,19 @@ const Navigation = () => {
                   <div className="col-lg-2 col-12">
                     <div className="col-megamenu">
                       <ul className="list-unstyled mx-auto">
-                        <li>
+                        <li className="mb-lg-0 mb-3">
                           <a href="/" className="icon-link">
                             <i className="fas fa-chevron-right icon d-none d-lg-inline"></i>
                             Tips and Tutorials
                           </a>
                         </li>
-                        <li>
+                        <li className="mb-lg-0 mb-3">
                           <a href="/" className="icon-link">
                             <i className="fas fa-chevron-right d-none d-lg-inline"></i>
                             Cypto basics
                           </a>
                         </li>
-                        <li>
+                        <li className="mb-lg-0 mb-3">
                           <a href="/" className="icon-link">
                             <i className="fas fa-chevron-right d-none d-lg-inline"></i>
                             Market updates
@@ -114,15 +138,20 @@ const Navigation = () => {
                 </div>
               </div>
             </li>
+
+            {/* leaarn parts end */}
+
+            {/* Individuasls part start */}
+
             <li class="nav-item item mx-2 dropdown has-megamenu">
               <NavLink
                 class="nav-link dropdown-toggle"
                 href="/"
                 data-bs-toggle="dropdown"
-                onClick={handleClick}
+                onClick={handleClick1}
               >
                 Individuals
-                <i className={click ? down : up}></i>
+                <i className={click1 ? down : up}></i>
               </NavLink>
               <div
                 className="dropdown-menu megamenushadow border-0 m-0 p-lg-4 p-4 megamenu"
@@ -140,7 +169,9 @@ const Navigation = () => {
                               className="img-fluid dropdwon-img mx-3 d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h4 className="text1 i-head">Buy and cell</h4>
+                              <h4 className="text1 i-head mb-lg-0 mb-3">
+                                Buy and cell
+                              </h4>
                               <p className="text2 i-discription d-none d-lg-inline">
                                 Buy and cell crypto
                               </p>
@@ -153,7 +184,9 @@ const Navigation = () => {
                               className="img-fluid mx-3 dropdwon-img d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Earn</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Earn
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 Learn and earn crypto
                               </h6>
@@ -166,7 +199,9 @@ const Navigation = () => {
                               className="img-fluid dropdwon-img mx-3 d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Private Clients</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Private Clients
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 For trusts, family offices,UHNWIs
                               </h6>
@@ -185,7 +220,9 @@ const Navigation = () => {
                               className="img-fluid dropdwon-img mx-3 d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Wallet</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Wallet
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 The best self-hosted crypto Wallet
                               </h6>
@@ -198,7 +235,9 @@ const Navigation = () => {
                               className="img-fluid mx-3 dropdwon-img d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Card</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Card
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 Spend crypto, earn crypto rewards
                               </h6>
@@ -211,7 +250,9 @@ const Navigation = () => {
                               className="img-fluid dropdwon-img mx-3 d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Borrow</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Borrow
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 Borrow cash using Bitcoin as collateral
                               </h6>
@@ -244,15 +285,20 @@ const Navigation = () => {
                 </div>
               </div>
             </li>
+
+            {/* individuals part end */}
+
+            {/* business part start */}
+
             <li class="nav-item item mx-2 dropdown has-megamenu">
               <NavLink
                 class="nav-link dropdown-toggle"
                 href="/"
                 data-bs-toggle="dropdown"
-                onClick={handleClick}
+                onClick={handleClick2}
               >
                 Business
-                <i className={click ? down : up}></i>
+                <i className={click2 ? down : up}></i>
               </NavLink>
               <div
                 className="dropdown-menu megamenushadow border-0 p-lg-4 p-4 megamenu"
@@ -270,7 +316,9 @@ const Navigation = () => {
                               className="img-fluid dropdwon-img mx-3 d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h4 className="text1 i-head">Prime</h4>
+                              <h4 className="text1 i-head mb-lg-0 mb-3">
+                                Prime
+                              </h4>
                               <p className="text2 i-discription d-none d-lg-inline">
                                 The prime brokerage platform
                               </p>
@@ -283,7 +331,9 @@ const Navigation = () => {
                               className="img-fluid mx-3 dropdwon-img d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Custody</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Custody
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 Institutional-grade offline storage
                               </h6>
@@ -296,7 +346,9 @@ const Navigation = () => {
                               className="img-fluid dropdwon-img mx-3 d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Exchange</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Exchange
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 Direct access to our exchange
                               </h6>
@@ -315,7 +367,9 @@ const Navigation = () => {
                               className="img-fluid dropdwon-img mx-3 d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Commerce</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Commerce
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 Accept crypto from anyone
                               </h6>
@@ -328,7 +382,9 @@ const Navigation = () => {
                               className="img-fluid mx-3 dropdwon-img d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Asset Hub</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Asset Hub
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 List your asset on Coinbase
                               </h6>
@@ -341,7 +397,9 @@ const Navigation = () => {
                               className="img-fluid dropdwon-img mx-3 d-none d-lg-inline"
                             />
                             <div className="dropdown-text">
-                              <h6 className="text1 i-head">Analytics</h6>
+                              <h6 className="text1 i-head mb-lg-0 mb-3">
+                                Analytics
+                              </h6>
                               <h6 className="text2 i-discription d-none d-lg-inline">
                                 Power your crypto compliance
                               </h6>
@@ -375,14 +433,17 @@ const Navigation = () => {
               </div>
             </li>
 
+            {/* business part end */}
+            {/* developers part start */}
+
             <li class="nav-item item mx-2 dropdown has-megamenu">
               <NavLink
                 class="nav-link dropdown-toggle"
                 href="/"
                 data-bs-toggle="dropdown"
-                onClick={handleClick}
+                onClick={handleClick3}
               >
-                Developers<i className={click ? down : up}></i>
+                Developers<i className={click3 ? down : up}></i>
               </NavLink>
               <div
                 className="dropdown-menu megamenushadow p-lg-4 p-4  border-0 megamenu"
@@ -393,7 +454,7 @@ const Navigation = () => {
                     <div className="col-lg-4 col-12">
                       <div className="col-megamenu">
                         <ul className="list-unstyled mx-auto">
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link1">
                               <i className="fas fa-chevron-right d-none d-lg-inline"></i>
                               Connect
@@ -402,7 +463,7 @@ const Navigation = () => {
                               Enable users to buy, sell, and store crypto
                             </h6>
                           </li>
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link1">
                               <i className="fas fa-chevron-right d-none d-lg-inline"></i>
                               Commerce
@@ -411,7 +472,7 @@ const Navigation = () => {
                               Accept crypto from anyone
                             </h6>
                           </li>
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link1">
                               <i className="fas fa-chevron-right d-none d-lg-inline"></i>
                               Market Pro
@@ -426,7 +487,7 @@ const Navigation = () => {
                     <div className="col-lg-4 col-12">
                       <div className="col-megamenu">
                         <ul className="list-unstyled">
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link1">
                               <i className="fas fa-chevron-right d-none d-lg-inline"></i>
                               Connect
@@ -435,7 +496,7 @@ const Navigation = () => {
                               Enable users to buy, sell, and store crypto
                             </h6>
                           </li>
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link1">
                               <i className="fas fa-chevron-right d-none d-lg-inline"></i>
                               Commerce
@@ -444,7 +505,7 @@ const Navigation = () => {
                               Accept crypto from anyone
                             </h6>
                           </li>
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link1">
                               <i className="fas fa-chevron-right d-none d-lg-inline"></i>
                               Market Pro
@@ -483,7 +544,7 @@ const Navigation = () => {
                 </div>
               </div>
             </li>
-
+            {/* devilopers part end  */}
             {/* company */}
 
             <li className="nav-item item mx-2  dropdown has-megamenu">
@@ -491,10 +552,10 @@ const Navigation = () => {
                 class="nav-link dropdown-toggle"
                 href="/"
                 data-bs-toggle="dropdown"
-                onClick={handleClick}
+                onClick={handleClick4}
               >
                 Company
-                <i className={click ? down : up}></i>
+                <i className={click4 ? down : up}></i>
               </NavLink>
               <div
                 className="dropdown-menu megamenushadow  border-0 megamenu"
@@ -506,19 +567,19 @@ const Navigation = () => {
                     <div className="col-lg-2 col-12">
                       <div className="col-megamenu">
                         <ul className="list-unstyled mx-auto">
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link">
                               <i className="fas fa-chevron-right d-none d-lg-inline"></i>
                               About
                             </a>
                           </li>
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link ">
                               <i className="fas fa-chevron-right d-lg-inline d-none"></i>
                               Affiliates
                             </a>
                           </li>
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link ">
                               <i className="fas fa-chevron-right d-lg-inline d-none"></i>
                               Blog
@@ -530,13 +591,13 @@ const Navigation = () => {
                     <div className="col-lg-2 col-12">
                       <div className="col-megamenu ">
                         <ul className="list-unstyled mx-auto">
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link ">
                               <i className="fas fa-chevron-right d-lg-inline d-none"></i>
                               Careers
                             </a>
                           </li>
-                          <li>
+                          <li className="mb-lg-0 mb-3">
                             <a href="/" className="icon-link ">
                               <i className="fas fa-chevron-right d-lg-inline d-none"></i>
                               Support
@@ -573,6 +634,8 @@ const Navigation = () => {
                 </div>
               </div>
             </li>
+
+            {/* Company send */}
           </ul>
           <div className="d-flex flex-column-reverse flex-lg-row">
             <div>
